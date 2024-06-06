@@ -1,0 +1,78 @@
+@import url("lib/components/tv.css");
+
+body {
+  background-color: rgb(80, 80, 80);
+  color: #cce2e3;
+  /* font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Your board style here */
+.racer-table td {
+  height: 40px;
+  width: 40px;
+}
+.finish {
+  background-image: url(./images/finish.png);
+  background-position: center;
+  background-size: cover;
+}
+.racer-table td.active {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#p1-race td.active {
+  background-image: url("images/player_1.png");
+}
+#p2-race td.active {
+  background-image: url("images/player_2.png");
+}
+
+/* #screen-container {
+  height: 500px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.jumpscare {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* background-color: black; */
+  background-image: url("./images/jumpscare.gif");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+.jumpscare div {
+  height: 100%;
+  color: white;
+}
+
+.win-screen {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* background-color: black; */
+  background-image: url("./images/buttersWin.gif");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+.win-screen > div {
+  height: 100%;
+  color: white;
+}
+
+#freddy {
+  display: none;
+  position: relative;
+  /* top: 150px;
+  left: 280px; */
+}
